@@ -3,7 +3,7 @@
 % Packages:
 \usepackage[
     ignoreheadfoot, % set margins without considering header and footer
-    top=1.3 cm, % seperation between body and page edge from the top
+    top=1.5 cm, % seperation between body and page edge from the top
     bottom=1 cm, % seperation between body and page edge from the bottom
     left=2 cm, % seperation between body and page edge from the left
     right=2 cm, % seperation between body and page edge from the right
@@ -118,7 +118,7 @@
 \newenvironment{twocolentry}[2][]{
     \onecolentry
     \def\secondColumn{#2}
-    \setcolumnwidth{\fill, 6.5 cm}
+    \setcolumnwidth{\fill, 5.6 cm}
     \begin{paracol}{2}
 }{
     \switchcolumn \raggedleft \secondColumn
@@ -198,15 +198,15 @@
         
         \begin{twocolentry}{
             
-        Sep 2024 -- June 2027 $|$ GPA\@: 4.0/4.0
+        Irvine, CA
         
-        \textit{Irvine, CA}}
+        \textit{Sep 2024 -- Jun 2027 $|$ GPA\@: 4.0}}
             \textbf{University of California, Irvine}
 
             \textit{B.S. in Computer Science, Minor in Digital Arts}
         \end{twocolentry}
 
-        \vspace{0.20 cm}
+        \vspace{0.2 cm}
         \begin{onecolentry}
             \begin{tabularx}{\textwidth}{@{}p{2.15cm}Y@{}}
                 \textbf{Coursework} & Data Structures \& Algorithms, Systems Design, Object-Oriented Programming, Computer \\ & Architecture, Discrete Math, Multivariable Calculus, Linear Algebra, Probability \& Statistics \\
@@ -242,7 +242,7 @@
         \end{onecolentry}
 
 
-        \vspace{0.2 cm}
+        \vspace{0.3 cm}
 
         \begin{twocolentry}{
         Jan 2024 -- Jun 2024    
@@ -266,49 +266,49 @@
     \section{Projects}
         
         \begin{twocolentry}{}
-            \textbf{Design Freelancing Platform
-            \href{https://github.com/rob-9/echo}{}}
+            \textbf{Design Freelancing Platform} \textit{ $|$ React, Node.js, PostgreSQL, AWS}
+            \href{https://github.com/rob-9/echo}{}
         \end{twocolentry}
 
         \vspace{0.10 cm}
         \begin{onecolentry}
             \begin{highlights}
                 \item Developed a real-time collaboration platform to reduce client-designer miscommunication.
-                \item Built image generation tool using \textbf{Bedrock} for prompt refinement and Stable Image Ultra for outputs.
-                \item Built infrastructure with \textbf{SageMaker} for model coordination, \textbf{Lambda} for serverless testing, and \textbf{LightSail} for deployment and hosting.
+                \item Built image generation pipeline using \textbf{Bedrock} API integration with \textbf{WebSocket} real-time updates.
+                % \item Built infrastructure with \textbf{SageMaker} for model coordination, \textbf{Lambda} for serverless processing, and \textbf{LightSail} for deployment.
             \end{highlights}
         \end{onecolentry}
 
 
-        \vspace{0.2 cm}
+        \vspace{0.3 cm}
 
         \begin{twocolentry}{}
-            \textbf{AR Debate Trainer
-            \href{https://github.com/rob-9/punchline}{}}
+            \textbf{AR Debate Trainer} \textit{ $|$ JavaScript, Python, WebSocket}
+            \href{https://github.com/rob-9/punchline}{}
         \end{twocolentry}
 
         \vspace{0.10 cm}
         \begin{onecolentry}
             \begin{highlights}
-                \item Created an AI-driven speech \& debate training platform to simulate realistic public-speaking scenarios.
-                \item Integrated immersive AR environments within Snap Lens \& Roblox studios to reduce speaking anxiety.
+                \item Created speech training platform to simulate realistic public-speaking scenarios and reduce speaking anxiety.
+                \item Built \textbf{AR environments} using sponsor platforms \textbf{Snap Lens Studio} and \textbf{Roblox Studio}.
+                % \item Used \textbf{OpenAI Whisper} for real-time speech analysis and feedback generation.
             \end{highlights}
         \end{onecolentry}
 
 
-        \vspace{0.2 cm}
+        \vspace{0.3 cm}
 
         \begin{twocolentry}{}
-            \textbf{LeInterview
-            \href{https://github.com/rob-9/LeInterview}{}}
+            \textbf{LeInterview} \textit{ $|$ Python, JavaScript, Docker}
+            \href{https://github.com/rob-9/LeInterview}{}
         \end{twocolentry}
 
         \vspace{0.10 cm}
         \begin{onecolentry}
             \begin{highlights}
-                \item Engineered a platform for company-specific interview simulations with integrated code editor.
-                \item Integrated automated grading via unit test generation and semantic evaluation.
-                \item Developed authentication, progress tracking, and analytics dashboards for personalized insights.
+                \item Engineered a platform for company-specific interview simulations to improve technical hiring accuracy.
+                \item Implemented containerized code execution with automated test generation and evaluation.
             \end{highlights}
         \end{onecolentry}
 
@@ -336,8 +336,8 @@
     
         \begin{onecolentry}
             \begin{tabularx}{\textwidth}{@{}p{2.15cm}Y@{}}
-                \textbf{Languages} & Python, C++, R, Java, JavaScript, TypeScript, SQL (Postgres), HTML/CSS \\[0.1cm]
-                \textbf{Technologies} & React, Next.js, Vue.js, Node.js, Flask, GraphQL, Kafka, PostgreSQL, Firebase, AWS, PyTorch, TensorFlow, OpenCV, LangChain, LangGraph \\[0.5cm]
+                \textbf{Languages} & Python, C++, R, Java, JavaScript, TypeScript, SQL (Postgres), HTML/CSS \\[0.2cm]
+                \textbf{Technologies} & React, Next.js, Vue.js, Node.js, Flask, GraphQL, Kafka, PostgreSQL, Firebase, AWS, PyTorch, TensorFlow, OpenCV, LangChain, LangGraph \\[0.6cm]
                 \textbf{Tools} & Git, Vim, Docker Compose, DBeaver, Figma
             \end{tabularx}
         \end{onecolentry}
