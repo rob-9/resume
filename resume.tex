@@ -3,11 +3,11 @@
 % Packages:
 \usepackage[
     ignoreheadfoot, % set margins without considering header and footer
-    top=1.5 cm, % seperation between body and page edge from the top
-    bottom=1 cm, % seperation between body and page edge from the bottom
-    left=2 cm, % seperation between body and page edge from the left
-    right=2 cm, % seperation between body and page edge from the right
-    footskip=1.0 cm, % seperation between body and footer
+    top=1.25 cm, % separation between body and page edge from the top
+    bottom=1 cm, % separation between body and page edge from the bottom
+    left=2 cm, % separation between body and page edge from the left
+    right=2 cm, % separation between body and page edge from the right
+    footskip=1.0 cm, % separation between body and footer
     % showframe % for debugging 
 ]{geometry} % for adjusting page geometry
 \usepackage{titlesec} % for customizing section titles
@@ -55,7 +55,7 @@
 \setcounter{secnumdepth}{0} % no section numbering
 \setlength{\parindent}{0pt} % no indentation
 \setlength{\topskip}{0pt} % no top skip
-\setlength{\columnsep}{0cm} % set column seperation
+\setlength{\columnsep}{0cm} % set column separation
 
 % \makeatletter
 % \let\ps@customFooterStyle\ps@plain % Copy the plain style to customFooterStyle
@@ -118,7 +118,7 @@
 \newenvironment{twocolentry}[2][]{
     \onecolentry
     \def\secondColumn{#2}
-    \setcolumnwidth{\fill, 5.6 cm}
+    \setcolumnwidth{\fill, 5 cm}
     \begin{paracol}{2}
 }{
     \switchcolumn \raggedleft \secondColumn
@@ -162,33 +162,33 @@
     \begin{header}
         \textbf{\fontsize{24 pt}{24 pt}\selectfont Robert Ji}
 
-        \vspace{0.1 cm}
+        \vspace{0.05 cm}
 
         \normalsize
-        \mbox{{\color{black}\footnotesize\faMapMarker*}\hspace*{0.13cm} San Jose, CA}%
-        \kern 0.3 cm%
+        \mbox{{\color{black}\footnotesize\faMapPin}\hspace*{0.05cm} Cupertino, CA}%
+        \kern 0.2 cm%
         \AND%
-        \kern 0.3 cm%
-        \mbox{\hrefWithoutArrow{tel:+14082031790}{\color{black}{\footnotesize\faPhone*}\hspace*{0.13cm} (408) 203--1790}}%
-        \kern 0.3 cm%
+        \kern 0.2 cm%
+        \mbox{\hrefWithoutArrow{tel:+14082031790}{\color{black}{\footnotesize\faPhone*}\hspace*{0.05cm} (408) 203--1790}}%
+        \kern 0.2 cm%
         \AND%
-        \kern 0.3 cm%
-        \mbox{\hrefWithoutArrow{mailto:robert.ji888@gmail.com}{\color{black}{\footnotesize\faEnvelope[regular]}\hspace*{0.13cm} Email}}%
-        \kern 0.3 cm%
+        \kern 0.2 cm%
+        \mbox{\hrefWithoutArrow{mailto:roberj4@uci.edu}{\color{black}{\footnotesize\faPaperPlane[regular]}\hspace*{0.05cm} roberj4@uci.edu}}%
+        \kern 0.2 cm%
         \AND%
         % \kern 0.25 cm%
         % \mbox{\hrefWithoutArrow{https://yourwebsite.com/}{\color{black}{\footnotesize\faLink}\hspace*{0.13cm}yourwebsite.com}}%
         % \kern 0.25 cm%
         % \AND%
-        \kern 0.3 cm%
-        \mbox{\hrefWithoutArrow{https://linkedin.com/in/robert-ji}{\color{black}{\footnotesize\faLinkedinIn}\hspace*{0.13cm} LinkedIn}}%
-        \kern 0.3 cm%
+        \kern 0.2 cm%
+        \mbox{\hrefWithoutArrow{https://linkedin.com/in/robert-ji}{\color{black}{\footnotesize\faLinkedinIn}\hspace*{0.05cm} linkedin.com/in/robert-ji}}%
+        \kern 0.2 cm%
         \AND%
-        \kern 0.3 cm%
-        \mbox{\hrefWithoutArrow{https://github.com/rob-9}{\color{black}{\footnotesize\faGithub}\hspace*{0.13cm} Github}}%
+        \kern 0.2 cm%
+        \mbox{\hrefWithoutArrow{https://github.com/rob-9}{\color{black}{\footnotesize\faGithub}\hspace*{0.05cm} github.com/rob-9}}%
     \end{header}
 
-    \vspace{0.3 cm - 0.3 cm}
+    \vspace{0.4 cm - 0.3 cm}
 
 
     \section{Education}
@@ -198,9 +198,9 @@
         
         \begin{twocolentry}{
             
-        Irvine, CA
+        Sep 2024 – Jun 2027
         
-        \textit{Sep 2024 -- Jun 2027 $|$ GPA\@: 4.0}}
+        \textit{ GPA\@: 4.00}}
             \textbf{University of California, Irvine}
 
             \textit{B.S. in Computer Science, Minor in Digital Arts}
@@ -222,22 +222,22 @@
 
         
         \begin{twocolentry}{
-        Jun 2025 -- Sep 2025 
+        Jun 2025 – Oct 2025 
             
         \textit{Santa Clara, CA}}
             \textbf{Software Engineer Intern}
             
-            \textit{Zyprova
-            \href{https://zyprova.com/}}
+            \textit{Zyprova}
+            % \href{https://zyprova.com/}}
         \end{twocolentry}
 
         \vspace{0.10 cm}
         \begin{onecolentry}
             \begin{highlights}
-                \item Developed \textbf{NestJS} microservices with \textbf{Kafka} streaming, powering KPI reporting for early enterprise pilots.
-                \item Built multi-agent \textbf{LangGraph} system that plans and executes \textbf{GraphQL} queries through \textbf{HITL} workflows.
-                \item Adapted \textbf{MCP} and \textbf{A2A} protocols for microagent communication, increasing query correctness by \textbf{40\%}.
-                \item Designed \textbf{Vue.js} financial dashboard with \textbf{AG Grid} \& \textbf{ApexCharts} for interactive data visualization.
+                \item Worked with founders to develop \textbf{NestJS} microservices, powering KPI reporting for \textbf{10+} enterprise pilots.
+                \item Led design of multi-agent \textbf{LangGraph} system that automates \textbf{GraphQL} querying for non-technical users.
+                \item Adapted \textbf{MCP} and \textbf{A2A} protocols for microagent communication, \textbf{increasing query accuracy by 40\%}.
+                \item Designed financial dashboard with \textbf{AG Grid} \& \textbf{ApexCharts}, streamlining KPI analysis for clients.
             \end{highlights}
         \end{onecolentry}
 
@@ -245,12 +245,13 @@
         \vspace{0.3 cm}
 
         \begin{twocolentry}{
-        Jan 2024 -- Jun 2024    
+        Jan 2024 – Jun 2024    
             
         \textit{Palo Alto, CA}}
             \textbf{Machine Learning Research Intern}
             
-            \textit{Robinson Lab @ Stanford Medicine \href{https://drive.google.com/file/d/1cgRNPQy-6pXMvyiAH8pL8GQbGyIG8JlY/view?usp=sharing}{}}
+            \textit{Robinson Lab @ Stanford Medicine}
+            % \href{https://drive.google.com/file/d/1cgRNPQy-6pXMvyiAH8pL8GQbGyIG8JlY/view?usp=sharing}{}}
         \end{twocolentry}
 
         \vspace{0.10 cm}
@@ -258,7 +259,7 @@
             \begin{highlights}
                 \item Analyzed single-cell RNA-seq data of IPF patient lung tissue, identifying 20 cell clusters with six increased populations, five decreased, and two novel pathogenic clusters.
                 \item Applied PCA, UMAP, \& t-SNE for dimensionality reduction to visualize disease gene expression patterns.
-                \item Performed GO enrichment analysis of DEGs, identifying top pathways with bar plots and GCNs.
+                \item Built analysis workflow template for independent transcriptomic analysis, now used as lab standard.
             \end{highlights}
         \end{onecolentry}
 
@@ -266,16 +267,16 @@
     \section{Projects}
         
         \begin{twocolentry}{}
-            \textbf{Design Freelancing Platform} \textit{ $|$ React, Node.js, PostgreSQL, AWS}
-            \href{https://github.com/rob-9/echo}{}
+            \textbf{Echo} -- Design Freelancing Platform \textit{ $|$ Python, JavaScript, AWS}
+            % \href{https://github.com/rob-9/echo}{}
         \end{twocolentry}
 
         \vspace{0.10 cm}
         \begin{onecolentry}
             \begin{highlights}
                 \item Developed a real-time collaboration platform to reduce client-designer miscommunication.
-                \item Built image generation pipeline using \textbf{Bedrock} API integration with \textbf{WebSocket} real-time updates.
-                % \item Built infrastructure with \textbf{SageMaker} for model coordination, \textbf{Lambda} for serverless processing, and \textbf{LightSail} for deployment.
+                \item Integrated \textbf{AWS Bedrock} API with \textbf{WebSocket} connections for live image generation and design feedback.
+                \item Deployed on \textbf{AWS Lambda} with \textbf{DynamoDB} storage, supporting unlimited client revisions without infrastructure scaling costs.
             \end{highlights}
         \end{onecolentry}
 
@@ -283,16 +284,16 @@
         \vspace{0.3 cm}
 
         \begin{twocolentry}{}
-            \textbf{AR Debate Trainer} \textit{ $|$ JavaScript, Python, WebSocket}
-            \href{https://github.com/rob-9/punchline}{}
+            \textbf{Punchlines} -- AR Debate Trainer \textit{ $|$ React, Node.js, PostgreSQL}
+            % \href{https://github.com/rob-9/punchline}{}
         \end{twocolentry}
 
         \vspace{0.10 cm}
         \begin{onecolentry}
             \begin{highlights}
                 \item Created speech training platform to simulate realistic public-speaking scenarios and reduce speaking anxiety.
-                \item Built \textbf{AR environments} using sponsor platforms \textbf{Snap Lens Studio} and \textbf{Roblox Studio}.
-                % \item Used \textbf{OpenAI Whisper} for real-time speech analysis and feedback generation.
+                \item Built AR environments within \textbf{Snap Lens} \& \textbf{Roblox Studio} for hyperrealistic debate settings.
+                \item Integrated real-time speech analysis with \textbf{OpenAI Whisper}, providing automated feedback generation.
             \end{highlights}
         \end{onecolentry}
 
@@ -300,14 +301,14 @@
         \vspace{0.3 cm}
 
         \begin{twocolentry}{}
-            \textbf{LeInterview} \textit{ $|$ Python, JavaScript, Docker}
-            \href{https://github.com/rob-9/LeInterview}{}
+            \textbf{LeInterview} -- Technical Coding Platform \textit{ $|$ Python, Flask, Docker, MongoDB}
+            % \href{https://github.com/rob-9/LeInterview}{}
         \end{twocolentry}
 
         \vspace{0.10 cm}
         \begin{onecolentry}
             \begin{highlights}
-                \item Engineered a platform for company-specific interview simulations to improve technical hiring accuracy.
+                \item Engineered a platform with 1000+ company-specific interview sets to improve technical hiring accuracy.
                 \item Implemented containerized code execution with automated test generation and evaluation.
             \end{highlights}
         \end{onecolentry}
@@ -316,18 +317,14 @@
     \section{Leadership}
 
         \begin{twocolentry}{
-        2012 -- Present    
-            
-        \textit{Cupertino, CA}}
+        Aug 2024}
             \textbf{Eagle Scout}
-            
-            \textit{Scouting America}
         \end{twocolentry}
 
         \vspace{0.10 cm}
         \begin{onecolentry}
             \begin{highlights}
-                \item Led a service project for FCSN, coordinating \textbf{700+ total volunteer hours} across hikes, campouts, and backpacking events for families of special-needs children.
+                \item Led a service project for FCSN, coordinating \textbf{750+ total volunteer hours} across hikes, campouts, and backpacking events for special-needs children and their families.
             \end{highlights}
         \end{onecolentry}
 
@@ -336,8 +333,8 @@
     
         \begin{onecolentry}
             \begin{tabularx}{\textwidth}{@{}p{2.15cm}Y@{}}
-                \textbf{Languages} & Python, C++, R, Java, JavaScript, TypeScript, SQL (Postgres), HTML/CSS \\[0.2cm]
-                \textbf{Technologies} & React, Next.js, Vue.js, Node.js, Flask, GraphQL, Kafka, PostgreSQL, Firebase, AWS, PyTorch, TensorFlow, OpenCV, LangChain, LangGraph \\[0.6cm]
+                \textbf{Languages} & Python, C++, R, Java, JavaScript, TypeScript, SQL (Postgres), HTML/CSS \\[0.1cm]
+                \textbf{Technologies} & React, Next.js, Node.js, Flask, GraphQL, Kafka, PostgreSQL, MongoDB, Firebase, AWS, PyTorch, TensorFlow, OpenCV, LangChain, LangGraph \\[0.5cm]
                 \textbf{Tools} & Git, Vim, Docker Compose, DBeaver, Figma
             \end{tabularx}
         \end{onecolentry}
