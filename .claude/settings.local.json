@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:developers.snap.com)",
+      "Bash(find:*)",
+      "WebFetch(domain:zyprova.com)"
+    ],
+    "deny": []
+  }
+}
