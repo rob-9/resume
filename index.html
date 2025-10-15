@@ -6,77 +6,45 @@
     <title>Robert Ji - Resume</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 40px 20px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            padding: 20px;
+            background: #2d2d2d;
         }
         .container {
+            max-width: 800px;
+            margin: 0 auto;
             background: white;
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .header {
             text-align: center;
-            max-width: 600px;
-        }
-        h1 {
-            color: #333;
-            margin-bottom: 10px;
-            font-size: 2.5em;
-        }
-        .subtitle {
-            color: #666;
-            margin-bottom: 30px;
-            font-size: 1.2em;
+            margin-bottom: 20px;
         }
         .btn {
             display: inline-block;
-            background: linear-gradient(45deg, #667eea, #764ba2);
+            background: #007bff;
             color: white;
-            padding: 15px 30px;
+            padding: 10px 20px;
             text-decoration: none;
-            border-radius: 50px;
-            font-weight: bold;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            margin: 10px;
+            border-radius: 4px;
+            margin-bottom: 20px;
         }
         .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            background: #0056b3;
         }
-        .pdf-embed {
-            margin-top: 30px;
+        .pdf-viewer {
+            width: 100%;
+            height: 800px;
             border: 1px solid #ddd;
-            border-radius: 10px;
-            overflow: hidden;
-        }
-        .update-info {
-            margin-top: 20px;
-            color: #666;
-            font-size: 0.9em;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Robert Ji</h1>
-        <p class="subtitle">Software Engineer & Computer Science Student</p>
-        
-        <a href="resume.pdf" class="btn" target="_blank">📄 View Resume (PDF)</a>
-        <a href="resume.pdf" class="btn" download="Robert_Ji_Resume.pdf">⬇️ Download Resume</a>
-        
-        <div class="pdf-embed">
-            <embed src="resume.pdf" type="application/pdf" width="100%" height="600px">
-        </div>
-        
-        <div class="update-info">
-            <p>✨ This resume is automatically updated with every GitHub push</p>
-            <p>🔗 <a href="https://github.com/rob-9/latex" target="_blank">View Source on GitHub</a></p>
-        </div>
+        <embed src="resume.pdf" type="application/pdf" class="pdf-viewer">
     </div>
 </body>
 </html>
